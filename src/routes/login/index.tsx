@@ -8,8 +8,9 @@ import {
 import { InitialValues, formAction$, useForm } from "@modular-forms/qwik";
 
 export const useAction = globalAction$((values, event) => {
-  console.log("useAction...");
+  console.log("action (qwik)");
   throw event.redirect(302, "/");
+//   return {}
 });
 
 const loginSchema = z.object({
@@ -22,15 +23,16 @@ const loginSchema = z.object({
 type LoginForm = z.input<typeof loginSchema>;
 
 export const useFormLoader = routeLoader$<InitialValues<LoginForm>>(() => {
-  console.log("formLoader...");
+  console.log("formLoader");
   return {
     email: "test@example.com",
   };
 });
 
 export const useFormAction = formAction$<LoginForm>(async (values, event) => {
-  console.log("useFormAction...");
+  console.log("action (modular)");
   throw event.redirect(302, "/");
+//   return {}
 });
 
 export default component$(() => {
