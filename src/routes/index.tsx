@@ -6,7 +6,7 @@ export default component$(() => {
     <>
       <div style="padding: 50px">
         home <br /><br />
-        <a href="/login">login link</a>
+        <a href="/login/">login link</a>
       </div>
     </>
   );

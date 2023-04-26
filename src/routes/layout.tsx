@@ -5,6 +5,8 @@ import Header from "~/components/starter/header/header";
 import Footer from "~/components/starter/footer/footer";
 
 export const useServerTimeLoader = routeLoader$(() => {
+  console.log("loader...");
+
   return {
     date: new Date().toISOString(),
   };
