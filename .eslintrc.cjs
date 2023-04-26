@@ -8,7 +8,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:qwik/recommended',
+    // 'plugin:qwik/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -36,6 +36,6 @@ module.exports = {
     'no-case-declarations': 'off',
     'no-console': 'off',
     '@typescript-eslint/no-unused-vars': ['off'],
-    '@typescript-eslint/consistent-type-imports': 'warn',
+    '@typescript-eslint/consistent-type-imports': 'off',
   },
 };

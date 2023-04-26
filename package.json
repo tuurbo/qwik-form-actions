@@ -34,5 +34,8 @@
     "undici": "5.21.2",
     "vite": "4.2.2",
     "vite-tsconfig-paths": "4.2.0"
+  },
+  "dependencies": {
+    "@modular-forms/qwik": "^0.9.0"
   }
 }

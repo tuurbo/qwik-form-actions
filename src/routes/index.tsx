@@ -5,7 +5,9 @@ export default component$(() => {
   return (
     <>
       <div style="padding: 50px">
-        home <br /><br />
+        <strong>home Page</strong>
+        <br />
+        <br />
         <a href="/login/">login link</a>
       </div>
     </>
